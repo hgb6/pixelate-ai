@@ -6,7 +6,7 @@
    Change this value to true to simulate
    an admin account during testing.
 */
-const isAdmin = false;
+const isAdmin = True;
 
 /* Show Admin Panel */
 
