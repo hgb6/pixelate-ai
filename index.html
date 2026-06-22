@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Webcast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">WEBCAST LIVE</div>
+
+    <div class="live-indicator">
+        <span class="dot"></span>
+        LIVE
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="video-section">
+
+        <div class="video-wrapper">
+            <iframe
+                id="streamFrame"
+                src="https://www.youtube.com/embed/jfKfPfyJRdk"
+                title="Live Stream"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="event-info">
+            <h1>Live Webcast</h1>
+
+            <p>
+                Welcome to our live webcast. Watch the stream,
+                join the chat, and stay tuned for updates.
+            </p>
+
+            <div class="countdown">
+                Starts in:
+                <span id="timer">Loading...</span>
+            </div>
+        </div>
+
+        <div class="admin-panel" id="adminPanel">
+            <h2>Admin Controls</h2>
+
+            <input
+                type="text"
+                id="videoUrl"
+                placeholder="Paste a YouTube Embed URL">
+
+            <button id="updateVideoBtn">
+                Update Video
+            </button>
+        </div>
+
+    </section>
+
+    <aside class="chat-section">
+
+        <h2>Live Chat</h2>
+
+        <div class="chat-box" id="chatBox">
+            <div class="message">
+                <strong>Host:</strong> Welcome to the Live Webcast!
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message...">
+
+            <button id="sendBtn">
+                Send
+            </button>
+        </div>
+
+    </aside>
+
+</main>
+
+<footer>
+    © 2026 Webcast Live. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
